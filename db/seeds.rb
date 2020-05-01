@@ -27,6 +27,9 @@ date = Date.parse('2015-09-08')
   date = date.next
 end
 
-(1..40).each do |num|
-Appearance.create(rating: rand(1..5), guest_id: Guest.all.sample.id, episode_id: Episode.all.sample.id) 
+epcount = Episode.last.id
+epcurrent = Episode.first.id
+while epcurrent < epcount do
+Appearance.create(rating: rand(1..5), guest_id: Guest.all.sample.id, episode_id: epcurrent) 
+epcurrent += 1
 end
