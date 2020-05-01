@@ -7,7 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Guest.destroy_all
+Episode.destroy_all
+Appearance.destroy_all
 
+puts" Seeding"
 require 'csv'
 
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'daily_show_guests.csv'))
@@ -25,3 +28,6 @@ date = Date.parse('2015-09-08')
   date = date.next
 end
 
+20.times do
+  Appearance.create(guest_id: Guest.all.sample.id, episode_id: Episode.all.sample.id, rating: rand(1..5))
+end
