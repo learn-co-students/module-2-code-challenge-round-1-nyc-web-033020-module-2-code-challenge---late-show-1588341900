@@ -17,5 +17,25 @@ class GuestsController < ApplicationController
     redirect_to guest_path(@guest) 
   end 
 
-  
+  def edit 
+    @guest = Guest.find(params[:id]) 
+  end 
+
+  def update 
+    @guest = Guest.find(params[:id]) 
+    @guest.update(guest_params) 
+    redirect_to guest_path(@guest) 
+  end 
+
+  def destroy 
+    @guest = Guest.find(params[:id]) 
+    @guest.destroy 
+    redirect_to guests_url 
+  end 
+
+  private 
+
+  def guest_params 
+    params.require(:guest).permit(:name, :occupation) 
+  end 
 end

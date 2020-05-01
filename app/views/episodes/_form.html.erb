@@ -1,2 +1,13 @@
-<h1>Episodes#_form</h1>
-<p>Find me in app/views/episodes/_form.html.erb</p>
+<%= form_for @episode do |f| %> 
+    <div class="field"> 
+        <%= f.label :date %> 
+        <%= f.date_field :date %> 
+    </div> 
+    <div class="field"> 
+        <%= f.label :number %> 
+        <%= f.number_field :number %> 
+    </div> 
+    <div class="actions"> 
+        <%= f.submit %> 
+    </div> 
+<% end %> 
