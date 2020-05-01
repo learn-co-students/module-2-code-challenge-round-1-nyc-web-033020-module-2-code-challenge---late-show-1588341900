@@ -1,0 +1,11 @@
+<h3>Log New Appearance</h3>
+
+<%= form_for @appearance do |f| %>
+  <%= f.label :guest %>
+  <%= f.collection_select :guest_id, @guests, :id, :name %>
+  <%= f.label :episode %>
+  <%= f.collection_select :episode_id, @episodes, :id, :details %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating, min: 1, max: 5 %>
+  <%= f.submit %>
+<% end %>
