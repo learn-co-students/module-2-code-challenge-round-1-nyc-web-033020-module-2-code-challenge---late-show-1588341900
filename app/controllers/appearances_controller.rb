@@ -9,9 +9,9 @@ class AppearancesController < ApplicationController
     def create
         #After submitting the form, the user should be redirected 
         #to the selected episode's show page.
-        @appearance = Appearance.create(appearances_params)
+        @appearance = Appearance.create(appearance_params)
         if @appearance.valid?
-            redirect_to episode_path(appearances.episode)
+            redirect_to episode_path(@appearance.episode)
         else
             flash[:errors] = @appearance.errors.full_messages
             redirect_to new_appearance_path
@@ -20,8 +20,8 @@ class AppearancesController < ApplicationController
 
     private
 
-    def appearances_params
-        params.require(:appearances).permit(:guest_id, :episode_id, :rating)
+    def appearance_params
+        params.require(:appearance).permit(:guest_id, :episode_id, :rating)
     end
 
 end

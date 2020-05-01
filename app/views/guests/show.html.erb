@@ -1,6 +1,11 @@
 <h1>Show Page</h1>
 
+<p><%= @.date %></p>
 
+<% @guest.episodes.each do |eps| %>
+    <p><%= link_to "#{episode.date}" %></p>
+  <% end %>
+  
 
   
   

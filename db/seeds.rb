@@ -28,4 +28,5 @@ date = Date.parse('2015-09-08')
 end
 
 40.times do |app|
-  Appearance.create(rating:)
+  Appearance.create(episode_id: Episode.all.sample, guest_id: Guest.all.sample, rating: rand(5))
+end
