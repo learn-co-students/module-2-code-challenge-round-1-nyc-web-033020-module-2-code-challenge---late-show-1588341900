@@ -1,0 +1,11 @@
+<p> <%= @guest.name %> </p>
+<p> <%= @guest.occupation %> </p>
+
+<% @guest.episodes.each do |episode| %> 
+    <p> <%= episode.date %> </p>
+<% end %>
+
+
+<% @guest.appearances.each do |appearance| %> 
+    <p> <%= appearance.rating %> </p>
+<% end %>

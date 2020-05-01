@@ -1,0 +1,10 @@
+<p> <%=@episode.date %> </p>
+
+
+<p> <%= Appearance.find(@episode.id).rating %> </p>
+
+
+<% @episode.date do |episode| %> 
+    <p> <%= link_to episode.date, episode_path(@episode)  %> </p>
+<% end %>
+

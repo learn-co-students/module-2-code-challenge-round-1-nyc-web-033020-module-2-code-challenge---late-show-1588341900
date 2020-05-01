@@ -1,0 +1,16 @@
+<h1>New Appearance Page</h1>
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error|%>
+    <p><%= error %></p>
+<%end %> 
+<%= form_for @appearance do |f| %>
+    <%= f.label :episode_id %>
+    <%= f.collection_select :episode_id, @episodes, :id, :number %>
+
+    <%= f.label :guest_id %>
+    <%= f.collection_select :guest_id, @guests, :id, :name %>
+
+    <%= f.submit %>
+
+<% end %>
