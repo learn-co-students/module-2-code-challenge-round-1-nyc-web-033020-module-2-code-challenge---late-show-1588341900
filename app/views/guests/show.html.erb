@@ -1,0 +1,6 @@
+<h1>Guest Appearances</h1>
+
+<% @guest.episodes.each do |episode| %>
+<p><%= episode.date %></p>
+<p><%= episode.rating %></p>
+<% end %>
