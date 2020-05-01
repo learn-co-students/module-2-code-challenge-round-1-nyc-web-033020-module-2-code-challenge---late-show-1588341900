@@ -1,8 +1,8 @@
 <h1><%= @guest.name %></h1>
 <h3>Occupation: <%= @guest.occupation %></h3>
 <h4>Episodes:</h4>
-<% @guest.episodes.each do |episode| %>
+<% @guest.episodes.sort.each do |episode| %>
   <ul>
-    <li># <%= episode.number %> - <%= link_to episode.date, episode_path(episode) %>, Rating: <%=@guest.appearance.rating%> </li>
+    <li># <%= episode.number %> - <%= link_to episode.date, episode_path(episode) %>, Rating: <%=Appearance.find_by(guest_id: @guest.id, episode_id: episode.id).rating %> </li>
   </ul>
 <% end %>
