@@ -1,5 +1,9 @@
 <h1>Book an Appearance</h1>
 
+<% if flash[:errors] %>
+    <%= flash[:errors] %>
+<% end %>
+
 <%= form_for @appearance do |f|%>
     <%= f.label :guest %>
     <%= f.collection_select :guest_id, Guest.all, :id, :name%> 
