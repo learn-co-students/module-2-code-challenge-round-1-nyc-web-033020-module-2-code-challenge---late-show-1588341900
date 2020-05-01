@@ -1,0 +1,10 @@
+<h1> Originally aired <%= @episode.date %> </h1>
+<br>
+<h3>Guess List </h3>
+<ul>
+     <% @episode.guests.each do |guest| %> 
+    <li><%= link_to guest.name, guest_path(guest) %> || Average Guest Rating: <%= guest.average_rating %> </li>
+<%end%>
+</ul>
+
+<p>Average Rating for Ep <%= @episode.average_rating %> </p>
