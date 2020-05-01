@@ -10,4 +10,9 @@ class Episode < ApplicationRecord
     "##{self.number.to_s} - #{self.air_date}"
   end
 
+  def avg_rating
+    all = self.appearances.map{|app| app.rating}
+    all.sum / all.length
+  end
+
 end

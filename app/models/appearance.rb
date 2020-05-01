@@ -4,8 +4,6 @@ class Appearance < ApplicationRecord
 
   validates :rating, presence: true
   validates :rating, numericality: true
-
-  def rating_str
-    self.rating.to_s
-  end
+  validates_uniqueness_of :guest_id, scope: [:episode], message: "alreay added to show!"
 end
+

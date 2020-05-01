@@ -4,6 +4,5 @@ class Guest < ApplicationRecord
 
   def appearance_rating(episode)
     appearance = Appearance.where(guest_id: self.id, episode_id: episode.id)
-    appearance.to_s
   end
 end
