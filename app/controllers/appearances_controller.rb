@@ -12,9 +12,21 @@ class AppearancesController < ApplicationController
   end
 
   def create
-    @appearance = Appearance.find
+   @appearance = Appearance.create(app_params)
+   if @appearance.valid?
+    flash[:success] = "SUCCESS!!"
+    redirect_to episode_path(@appearance)
+   else
+    flash[:my_errors] = appearance.errors.full_message
+    redirect_to new_appearance_path
+   end
   end
 
 
+  private
+
+  def app_params
+    params.require(:appearance).permit(:guest_id, :episode_id, :rating)
+  end
 
 end

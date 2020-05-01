@@ -3,8 +3,10 @@
 <%= form_for @appearance do |f| %>
 <%= f.label :episode_id %>
 <%= f.collection_select :episode_id, @episodes, :id, :date %>
+<%= f.label :guest_id %>
 <%= f.collection_select :guest_id, @guests, :id, :name %>
 
-<%= f.%>
+<%= f.label :rating_id%>
+<%= f.text_field :rating %>
 <%= f.submit %>
 <%end%>

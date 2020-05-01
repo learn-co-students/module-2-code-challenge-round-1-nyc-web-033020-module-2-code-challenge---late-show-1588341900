@@ -30,5 +30,5 @@ date = Date.parse('2015-09-08')
 end
 
 2000.times do
-  Appearance.create(guest: Guest.all.sample, episode_id: Episode.all.sample.id, rating: rand(1..5))
+  Appearance.create(guest: Guest.all.sample, episode_id: Episode.all.sample.id, rating: rand(1..5)
 end
