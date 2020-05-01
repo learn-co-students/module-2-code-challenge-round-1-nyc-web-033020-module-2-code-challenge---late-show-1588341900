@@ -1,0 +1,24 @@
+<% if flash[:errors]%>
+  <%flash[:errors].each do |error|%>
+    <%=error%>
+  <% end %>
+<% end %>
+
+<h1>Create an appearance</h1>
+
+<h4>
+<%= form_for @appearance do |f| %>
+Choose a guest: 
+  <%=f.label :guest_id%>
+  <%=f.collection_select :guest_id, Guest.all, :id, :name%><br><br>
+
+Choose which Episode:
+  <%=f.label :episode_id%>
+  <%=f.collection_select :episode_id, Episode.all, :id, :number%><br><br>
+  
+Give a Rating:
+  <%=f.label :rating%>
+  <%=f.number_field :rating%><br><br>
+
+  <%=f.submit value = "Create Appearance"%>
+<% end %></h4>
