@@ -1,7 +1,27 @@
-<h1>All The Guests</h1>
+<h1>All Guests</h1>
+<div><%= link_to 'Create Guest', new_guest_path %></div> 
+<br /> 
+<table> 
+  <thead> 
+    <tr> 
+      <th>Name</th> 
+      <th>Occupation</th> 
+      <th></th> 
+    </tr> 
+  </thead> 
+  <tbody> 
+    <% @guests.each do |guest| %> 
+      <tr> 
+        <td><%= guest.name %></td> 
+        <td><%= guest.occupation %></td> 
+        <td> 
+          <%= link_to 'View', guest %> |
+          <%= link_to 'Edit', edit_guest_path(guest) %> |
+          <%= link_to 'Delete', guest, method: :delete, data: { confirm: 'Are you sure you want to delete this guest?' }%> 
+        </td> 
+      </tr> 
+    <% end %> 
+  </tbody> 
+</table> 
 
-<ul>
-  <% @guests.each do |guest| %>
-    <li><%= guest.name %></li>
-  <% end %>
-</ul>
+

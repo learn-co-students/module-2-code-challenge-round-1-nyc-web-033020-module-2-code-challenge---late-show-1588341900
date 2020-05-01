@@ -1,2 +1,15 @@
-<h1>Guests#show</h1>
-<p>Find me in app/views/guests/show.html.erb</p>
+<div class="container"> 
+    <h1>Show Guest</h1> 
+
+    <h3><%= @guest.name %></h3> 
+
+    <h3><%= @guest.occupation %></h3> 
+
+    <h1>Episodes this guest appeared in:</h1> 
+
+    <% @guest.episodes.uniq.each do |episode| %> 
+        <p><%= link_to episode.date.strftime("%B %d, %Y"), episode_path(episode) %></p> 
+    <% end %> 
+
+    <h2><%= button_to "Back", guests_path, method: :get %></h2> 
+</div>  
