@@ -2,6 +2,6 @@
 
 <h2> Guest Appearances </h2>
 <% @episode.guests.each do |g| %>
-<%= g.name %>
+<%= link_to g.name, guest_path(g) %>
 <br>
 <% end %>
