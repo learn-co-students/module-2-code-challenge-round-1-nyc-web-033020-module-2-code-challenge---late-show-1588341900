@@ -3,7 +3,7 @@
 <p><%= @episode.date %></p>
 
 <% @episode.guests.each do |guest| %>
-    <p><%= link_to "#{guest.name}" %></p>
+    <p><%= link_to "#{guest.name, guest_path}" %></p>
   <% end %>
   
  
