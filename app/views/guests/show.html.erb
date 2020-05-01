@@ -4,3 +4,4 @@
 <% @guest.appearances.each do |a| %>
     <%= link_to a.episode.date, episode_path(a.episode) %> - <%= a.rating %> <br>
 <% end %>
+

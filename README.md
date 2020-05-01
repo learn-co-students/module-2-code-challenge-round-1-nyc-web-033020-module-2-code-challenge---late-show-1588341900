@@ -114,16 +114,16 @@ The rating on an Appearance should be between 1 and 5 (inclusive - `1` and `5` a
 - Add handling for this error to the Appearance create action.
 - The validation error should be shown on the Appearance creation form when a user attempts to save an appearance with an invalid rating. -->
 
-### 6. Advanced: Additional Appearance Validation
+<!-- ### 6. Advanced: Additional Appearance Validation
 
 A Guest should only appear on a given Episode once.
 
 - Add a validation to Appearance to ensure that each Guest can only appear once on the same Episode.
-- Update the error handling on the Appearance creation form to show this validation error.
+- Update the error handling on the Appearance creation form to show this validation error. -->
 
-### 7. Advanced: Episode Average Rating
+<!-- ### 7. Advanced: Episode Average Rating
 
-On the Episode show page, show the average rating of the Appearances for the episode.
+On the Episode show page, show the average rating of the Appearances for the episode. -->
 
 ### 8. Advanced: Guest Show Page Appearance Ordering
 
