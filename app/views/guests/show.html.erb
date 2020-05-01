@@ -1,0 +1,9 @@
+<%= @guest.name %><br>
+
+<label>Has appeared on these episodes:</label><br>
+<% @episodes.each do |episode| %>
+  <%= episode.date %><br>
+  <%= episode.number %><br>
+  <%= "Episode Rating: #{episode.average_rating}" %>
+  <%= link_to "See Episode Info", episode_path(episode) %><br>
+<% end %>
