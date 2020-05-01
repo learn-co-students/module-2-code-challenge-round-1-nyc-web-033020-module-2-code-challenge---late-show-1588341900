@@ -1,0 +1,15 @@
+<% if flash[:err] %>
+  <% flash[:err].each do |msg| %>
+      <p><%= msg %></p>
+  <% end %>  
+<% end %>
+
+<%= form_for @appearance do |f| %>
+    <%= f.label "GUEST: " %>
+    <%= f.collection_select :guest_id, @guests, :id, :name %> <br>
+    <%= f.label "EPISODE: " %>
+    <%= f.collection_select :episode_id, @episodes, :id, :number %> <br>
+    <%= f.label "RATING: " %>
+    <%= f.number_field :rating, placeholder: "Rating" %> <br>
+    <%= f.submit "SUBMIT" %>
+<% end %>
