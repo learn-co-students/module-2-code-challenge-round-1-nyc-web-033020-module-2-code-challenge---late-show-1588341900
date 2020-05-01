@@ -1,0 +1,7 @@
+<h1>All The Appearances</h1>
+
+<ul>
+  <% @appearances.each do |guest| %>
+    <li><%= Appearance.episode.date && Appearance.guest.name %></li>
+  <% end %>
+</ul>
