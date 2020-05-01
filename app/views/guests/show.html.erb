@@ -10,6 +10,6 @@
     <% @guest.episodes.uniq.each do |episode| %> 
         <p><%= link_to episode.date.strftime("%B %d, %Y"), episode_path(episode) %></p> 
     <% end %> 
-
+    
     <h2><%= button_to "Back", guests_path, method: :get %></h2> 
 </div>  
