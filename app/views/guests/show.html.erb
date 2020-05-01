@@ -1,0 +1,17 @@
+<h1> Guest Name: <%= @guest.name %> </h1>
+
+<h3> Appeared on Episodes: </h3>
+
+<ul>
+    <% @guest.episodes.each do |episode| %>
+        <li> <%= episode.date %> </li>
+    <% end %>
+</ul>
+
+<h3>Rating Per Appearance</h3>
+
+<ul>
+    <% @guest.appearances.each do |appearance| %>
+        <li> <%= appearance.rating %> </li>
+    <% end %>
+</ul>
