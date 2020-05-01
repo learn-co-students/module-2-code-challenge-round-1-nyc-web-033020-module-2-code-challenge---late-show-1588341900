@@ -1,3 +1,10 @@
+<% if flash[:my_errors]%>
+  <%flash[:my_errros].each do |error| %>
+  <p><% error %></p>
+  <%end%>
+<%end%>
+
+
 <h1>CREATE APPEARANCE</h1>
 
 <%= form_for @appearance do |f| %>
