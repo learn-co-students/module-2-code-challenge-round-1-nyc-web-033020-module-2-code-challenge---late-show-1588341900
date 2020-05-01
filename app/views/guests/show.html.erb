@@ -1,0 +1,14 @@
+<h1><%= @guest.name %>'s Apperances</h1>
+
+<h3>Episode number: </h3>
+<% @guest.episodes.map do |e| %>
+    <li><%= link_to e.date, episode_path(e)  %></li>
+<% end %>
+<br> 
+
+<h3>Appearance rating: </h3>
+<% @guest.appearances.map do |a| %>
+    <%= a.rating %> 
+<% end %>
+
+
