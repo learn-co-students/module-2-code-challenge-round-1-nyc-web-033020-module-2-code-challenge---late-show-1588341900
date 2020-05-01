@@ -1,0 +1,509 @@
+current directory: /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ext/nokogiri
+/Users/jiams/.rvm/rubies/ruby-2.6.1/bin/ruby -I /Users/jiams/.rvm/rubies/ruby-2.6.1/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200501-2652-1xd2wgz.rb extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.3.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv using --with-opt-* flags... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.8
+with the following patches applied:
+	- 0001-Revert-Do-not-URI-escape-in-server-side-includes.patch
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.8.tar.gz into tmp/x86_64-apple-darwin19.3.0/ports/libxml2/2.9.8... OK
+Running git apply with /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
+Running 'configure' for libxml2 2.9.8... OK
+Running 'compile' for libxml2 2.9.8... OK
+Running 'install' for libxml2 2.9.8... OK
+Activating libxml2 2.9.8 (from /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ports/x86_64-apple-darwin19.3.0/libxml2/2.9.8)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.32.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-apple-darwin19.3.0/ports/libxslt/1.1.32... OK
+Running 'configure' for libxslt 1.1.32... OK
+Running 'compile' for libxslt 1.1.32... OK
+Running 'install' for libxslt 1.1.32... OK
+Activating libxslt 1.1.32 (from /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ports/x86_64-apple-darwin19.3.0/libxslt/1.1.32)...
+checking for -llzma... yes
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+current directory: /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ext/nokogiri
+make "DESTDIR=" clean
+
+current directory: /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ext/nokogiri
+make "DESTDIR="
+compiling html_document.c
+In file included from html_document.c:1:
+In file included from ./html_document.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+html_document.c:16:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "0*", &rest);
+                           ^
+2 warnings generated.
+compiling html_element_description.c
+In file included from html_element_description.c:1:
+In file included from ./html_element_description.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling html_entity_lookup.c
+In file included from html_entity_lookup.c:1:
+In file included from ./html_entity_lookup.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+html_entity_lookup.c:9:24: warning: unused parameter 'self' [-Wunused-parameter]
+static VALUE get(VALUE self, VALUE key)
+                       ^
+2 warnings generated.
+compiling html_sax_parser_context.c
+In file included from html_sax_parser_context.c:1:
+In file included from ./html_sax_parser_context.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling html_sax_push_parser.c
+In file included from html_sax_push_parser.c:1:
+In file included from ./html_sax_push_parser.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling nokogiri.c
+In file included from nokogiri.c:1:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_attr.c
+In file included from xml_attr.c:1:
+In file included from ./xml_attr.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_attr.c:58:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+                           ^
+2 warnings generated.
+compiling xml_attribute_decl.c
+In file included from xml_attribute_decl.c:1:
+In file included from ./xml_attribute_decl.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_cdata.c
+In file included from xml_cdata.c:1:
+In file included from ./xml_cdata.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_cdata.c:23:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &doc, &content, &rest);
+                           ^
+xml_cdata.c:29:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+    content_str_len = RSTRING_LEN(content);
+                    ~ ^~~~~~~~~~~~~~~~~~~~
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:1000:6: note: expanded from macro 'RSTRING_LEN'
+     RSTRING_EMBED_LEN(str) : \
+     ^~~~~~~~~~~~~~~~~~~~~~
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:996:6: note: expanded from macro 'RSTRING_EMBED_LEN'
+     (long)((RBASIC(str)->flags >> RSTRING_EMBED_LEN_SHIFT) & \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xml_cdata.c:29:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+    content_str_len = RSTRING_LEN(content);
+                    ~ ^~~~~~~~~~~~~~~~~~~~
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:1001:28: note: expanded from macro 'RSTRING_LEN'
+     RSTRING(str)->as.heap.len)
+     ~~~~~~~~~~~~~~~~~~~~~~^~~
+4 warnings generated.
+compiling xml_comment.c
+In file included from xml_comment.c:1:
+In file included from ./xml_comment.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_comment.c:21:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &document, &content, &rest);
+                           ^
+2 warnings generated.
+compiling xml_document.c
+In file included from xml_document.c:1:
+In file included from ./xml_document.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_document.c:3:38: warning: unused parameter 'key' [-Wunused-parameter]
+static int dealloc_node_i(xmlNodePtr key, xmlNodePtr node, xmlDocPtr doc)
+                                     ^
+xml_document.c:327:31: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  if(rb_scan_args(argc, argv, "01", &level) == 0)
+                              ^
+xml_document.c:354:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "0*", &rest);
+                           ^
+xml_document.c:433:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "14", &name, &type, &external_id, &system_id,
+                           ^
+xml_document.c:508:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "03", &mode, &incl_ns, &with_comments);
+                           ^
+6 warnings generated.
+compiling xml_document_fragment.c
+In file included from xml_document_fragment.c:1:
+In file included from ./xml_document_fragment.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_document_fragment.c:17:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "1*", &document, &rest);
+                           ^
+2 warnings generated.
+compiling xml_dtd.c
+In file included from xml_dtd.c:1:
+In file included from ./xml_dtd.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_element_content.c
+In file included from xml_element_content.c:1:
+In file included from ./xml_element_content.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_element_decl.c
+In file included from xml_element_decl.c:1:
+In file included from ./xml_element_decl.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_encoding_handler.c
+In file included from xml_encoding_handler.c:1:
+In file included from ./xml_encoding_handler.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_encoding_handler.c:24:27: warning: unused parameter 'klass' [-Wunused-parameter]
+static VALUE delete(VALUE klass, VALUE name)
+                          ^
+xml_encoding_handler.c:36:26: warning: unused parameter 'klass' [-Wunused-parameter]
+static VALUE alias(VALUE klass, VALUE from, VALUE to)
+                         ^
+3 warnings generated.
+compiling xml_entity_decl.c
+In file included from xml_entity_decl.c:1:
+In file included from ./xml_entity_decl.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_entity_reference.c
+In file included from xml_entity_reference.c:1:
+In file included from ./xml_entity_reference.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_entity_reference.c:18:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+                           ^
+2 warnings generated.
+compiling xml_io.c
+In file included from xml_io.c:1:
+In file included from ./xml_io.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_io.c:54:30: warning: unused parameter 'ctx' [-Wunused-parameter]
+int io_close_callback(void * ctx) {
+                             ^
+2 warnings generated.
+compiling xml_libxml2_hacks.c
+compiling xml_namespace.c
+In file included from xml_namespace.c:1:
+In file included from ./xml_namespace.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_node.c
+In file included from xml_node.c:1:
+In file included from ./xml_node.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_node.c:521:31: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  if(rb_scan_args(argc, argv, "01", &level) == 0) {
+                              ^
+xml_node.c:1356:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &name, &document, &rest);
+                           ^
+3 warnings generated.
+compiling xml_node_set.c
+In file included from xml_node_set.c:1:
+In file included from ./xml_node_set.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_node_set.c:43:29: warning: unused parameter 'klass' [-Wunused-parameter]
+static VALUE allocate(VALUE klass)
+                            ^
+xml_node_set.c:294:30: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+    rb_scan_args(argc, argv, "11", NULL, NULL);
+                             ^
+xml_node_set.c:322:41: warning: unused parameter 'rb_node' [-Wunused-parameter]
+static VALUE to_array(VALUE self, VALUE rb_node)
+                                        ^
+4 warnings generated.
+compiling xml_processing_instruction.c
+In file included from xml_processing_instruction.c:1:
+In file included from ./xml_processing_instruction.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_processing_instruction.c:20:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "3*", &document, &name, &content, &rest);
+                           ^
+2 warnings generated.
+compiling xml_reader.c
+In file included from xml_reader.c:1:
+In file included from ./xml_reader.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_reader.c:533:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "13", &rb_buffer, &rb_url, &encoding, &rb_options);
+                           ^
+xml_reader.c:577:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "13", &rb_io, &rb_url, &encoding, &rb_options);
+                           ^
+3 warnings generated.
+compiling xml_relax_ng.c
+In file included from xml_relax_ng.c:1:
+In file included from ./xml_relax_ng.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_sax_parser.c
+In file included from xml_sax_parser.c:1:
+In file included from ./xml_sax_parser.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_sax_parser.c:88:9: warning: unused parameter 'self' [-Wunused-parameter]
+  VALUE self,
+        ^
+xml_sax_parser.c:126:7: warning: unused parameter 'nb_defaulted' [-Wunused-parameter]
+  int nb_defaulted,
+      ^
+3 warnings generated.
+compiling xml_sax_parser_context.c
+In file included from xml_sax_parser_context.c:1:
+In file included from ./xml_sax_parser_context.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_sax_push_parser.c
+In file included from xml_sax_push_parser.c:1:
+In file included from ./xml_sax_push_parser.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_schema.c
+In file included from xml_schema.c:1:
+In file included from ./xml_schema.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+1 warning generated.
+compiling xml_syntax_error.c
+In file included from xml_syntax_error.c:1:
+In file included from ./xml_syntax_error.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_syntax_error.c:10:34: warning: unused parameter 'ctx' [-Wunused-parameter]
+void Nokogiri_error_raise(void * ctx, xmlErrorPtr error)
+                                 ^
+2 warnings generated.
+compiling xml_text.c
+In file included from xml_text.c:1:
+In file included from ./xml_text.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_text.c:18:28: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  rb_scan_args(argc, argv, "2*", &string, &document, &rest);
+                           ^
+2 warnings generated.
+compiling xml_xpath_context.c
+In file included from xml_xpath_context.c:1:
+In file included from ./xml_xpath_context.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xml_xpath_context.c:162:48: warning: unused parameter 'ns_uri' [-Wunused-parameter]
+                                const xmlChar* ns_uri )
+                                               ^
+xml_xpath_context.c:172:52: warning: unused parameter 'ctx' [-Wunused-parameter]
+static void xpath_generic_exception_handler(void * ctx, const char *msg, ...)
+                                                   ^
+xml_xpath_context.c:200:31: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+  if(rb_scan_args(argc, argv, "11", &search_path, &xpath_handler) == 1)
+                              ^
+4 warnings generated.
+compiling xslt_stylesheet.c
+In file included from xslt_stylesheet.c:1:
+In file included from ./xslt_stylesheet.h:4:
+In file included from ./nokogiri.h:33:
+In file included from /Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby.h:33:
+/Users/jiams/.rvm/rubies/ruby-2.6.1/include/ruby-2.6.0/ruby/ruby.h:2186:35: warning: unused parameter 'allow_transient' [-Wunused-parameter]
+rb_array_ptr_use_end(VALUE a, int allow_transient)
+                                  ^
+xslt_stylesheet.c:64:41: warning: unused parameter 'klass' [-Wunused-parameter]
+static VALUE parse_stylesheet_doc(VALUE klass, VALUE xmldocobj)
+                                        ^
+xslt_stylesheet.c:112:51: warning: unused parameter 'userdata' [-Wunused-parameter]
+static void swallow_superfluous_xml_errors(void * userdata, xmlErrorPtr error, ...)
+                                                  ^
+xslt_stylesheet.c:112:73: warning: unused parameter 'error' [-Wunused-parameter]
+static void swallow_superfluous_xml_errors(void * userdata, xmlErrorPtr error, ...)
+                                                                        ^
+xslt_stylesheet.c:141:30: warning: cast from 'const char *' to 'char *' drops const qualifier [-Wcast-qual]
+    rb_scan_args(argc, argv, "11", &xmldoc, &paramobj);
+                             ^
+xslt_stylesheet.c:226:17: warning: unused parameter 'uri' [-Wunused-parameter]
+        const xmlChar *uri, void *data)
+                       ^
+xslt_stylesheet.c:226:28: warning: unused parameter 'data' [-Wunused-parameter]
+        const xmlChar *uri, void *data)
+                                  ^
+7 warnings generated.
+linking shared-object nokogiri/nokogiri.bundle
+Cleaning files only used during build.
+rm -rf /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ext/nokogiri/tmp/x86_64-apple-darwin19.3.0/ports
+rm -rf /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ports
+
+current directory: /Users/jiams/Flatiron/Mod_2/module-2-code-challenge-round-1-nyc-web-033020-module-2-code-challenge---late-show-1588341900/jiams/.bundle/gems/gems/nokogiri-1.8.4/ext/nokogiri
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 nokogiri.bundle ./.gem.20200501-2652-13mmqwk/nokogiri

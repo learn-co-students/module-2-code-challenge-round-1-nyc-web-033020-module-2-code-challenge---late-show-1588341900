@@ -1,0 +1,22 @@
+<h1> Create Talk Show Appearance! </h1>
+
+<%= form_for @appearance do |a| %>
+
+    <%= a.label :guest_id%>
+    <%= a.collection_select :guest_id, Guest.all, :id, :name %>
+
+    <%= a.label :episode_id%>
+    <%= a.collection_select :episode_id, Episode.all, :id, :date %>
+
+    <%= a.label :rating%>
+    <%= a.number_field :rating %> 
+
+    <%= a.submit %>
+
+<% end%>
+
+<% if flash[:oh_no] %>
+    <% flash[:oh_no].each do |msg| %>
+        <%= msg %>
+    <% end %>
+<% end %>
