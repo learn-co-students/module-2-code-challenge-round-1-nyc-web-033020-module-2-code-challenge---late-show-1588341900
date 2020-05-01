@@ -4,7 +4,7 @@
 
 <ul>
     <% @guest.episodes.each do |episode| %>
-        <li> <%= episode.date %> </li>
+        <li> <%= link_to episode.date, episode_path(episode) %> </li>
     <% end %>
 </ul>
 
